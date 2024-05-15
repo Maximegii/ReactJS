@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Composant1 from "@/composants/navbar";
+import Todolist from "@/composants/Todolist"
+
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function App() {
   return (
     <>
       <Head>
@@ -17,21 +19,8 @@ export default function Home() {
       </Head>
       <Composant1 />
       <main className={`${styles.main} ${inter.className}`}>
-        <div>
         <div className={styles.title}>
-        <h1>Hi! <br/> I'm <font color="#227B97">Maxime</font> <br/> Web developper</h1>
-        <Image 
-                
-                src="/logo-2.png"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={200}
-                height={200}
-                priority
-              />
-        </div>
-        
-          <button className={styles.card}>Contact</button>
+        <Todolist />
         </div>
       </main>
     </>

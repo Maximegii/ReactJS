@@ -1,10 +1,18 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 6rem;
   height: 91vh;
 }
+.input {
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 60vh;
+  height: 5vh;
+  margin-left: 2%;
+}
+
 .contacteznous {
   width: 700px;
   border: 1px solid;
@@ -34,9 +42,8 @@
 }
 .title {
   display: flex;
-  width:100vh;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:center;
   align-items:center;
 
 }
